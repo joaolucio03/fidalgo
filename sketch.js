@@ -1,7 +1,14 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(1920, 1080, WEBGL);
+    background(255,0,0);
   }
   
+  
   function draw() {
-    background(220);
+    rotateX(frameCount * 0.01);
+    rotateY(frameCount * 0.01);
+    box(70);
+    box(mouseX);
+    box(mouseY);
+    
   }
