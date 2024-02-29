@@ -7,8 +7,5 @@ function setup() {
   function draw() {
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
-    box(70);
-    box(mouseX);
-    box(mouseY);
-    
+    box(mouseY, mouseY);
   }
